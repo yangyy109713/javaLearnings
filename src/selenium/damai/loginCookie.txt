@@ -1,0 +1,60 @@
+General
+Request URL:https://secure.damai.cn/login.aspx?ru=https://www.damai.cn/hz/
+Request Method:POST
+Status Code:302 Found
+Remote Address:116.211.167.23:443
+Referrer Policy:no-referrer-when-downgrade
+
+Response Headers
+view source
+Cache-Control:private
+Connection:keep-alive
+Content-Type:text/html; charset=utf-8
+Date:Wed, 24 May 2017 01:35:13 GMT
+Location:https://secure.damai.cn/safetytip.aspx?ru=https%3a%2f%2fwww.damai.cn%2fhz%2f&simple=0&s=2
+Server:Tengine
+Set-Cookie:damai.cn_msgCount=1; domain=damai.cn; path=/
+Set-Cookie:damai.cn_user=UNmPdyLxZ9PAk+oAoae9Ua0JoL9keqdFFUxiHokRLVeAp3g0AezPEekSWaZBOOdh; domain=damai.cn; path=/
+Set-Cookie:damai.cn_email=15168475428; domain=damai.cn; expires=Fri, 13-Mar-2020 01:35:13 GMT; path=/
+Set-Cookie:damai.cn_nickName=5428sGRk8j; domain=damai.cn; expires=Fri, 13-Mar-2020 01:35:13 GMT; path=/
+Set-Cookie:damai_cn_user=UNmPdyLxZ9PAk+oAoae9Ua0JoL9keqdFFUxiHokRLVeAp3g0AezPEekSWaZBOOdh; domain=damai.cn; path=/
+Transfer-Encoding:chunked
+X-AspNet-Version:4.0.30319
+X-Powered-By:ASP.NET
+
+Request Headers
+view source
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding:gzip, deflate, br
+Accept-Language:zh-CN,zh;q=0.8
+Cache-Control:max-age=0
+Connection:keep-alive
+Content-Length:738
+Content-Type:application/x-www-form-urlencoded
+Cookie:aliyungf_tc=AQAAAK/BvzqagwsAo+PheiyZ7h+3bVH3; x_hm_tuid=bijF0vrkHYEFP4QUPn8V6q4XhfdRPlRROspKtY/7jMKkjzvHUG9bj4vKxgyidifd; Damai_SessionId=5f23396c-a7f6-4fa5-9b2a-5657d502da40; damai.cn_msgCount=1; damai_login_QRCode=f7ac9f01-bab6-471f-954b-b2fc81989431; page_tran_time=31.25; _uab_collina=149558957139846808693911; CNZZDATA1256416394=425989010-1495585250-https%253A%252F%252Fwww.damai.cn%252F%7C1495585250; _umdata=85957DF9A4B3B3E825D777A9F76E343434258E78F3CA315C6705A56A82BC090F9F611AE957D5A038CD43AD3E795C914CDAE5F189A62F8FF9BB924E9F3B3F160D; cn_7415364c9dab5n09ff68_dplus=%7B%22distinct_id%22%3A%20%2215c380670baafa-02ec3ac409c1c2-323f5c0f-1fa400-15c380670bb6e%22%2C%22initial_view_time%22%3A%20%221495585250%22%2C%22initial_referrer%22%3A%20%22https%3A%2F%2Fwww.damai.cn%2Fhz%2F%22%2C%22initial_referrer_domain%22%3A%20%22www.damai.cn%22%2C%22%24_sessionid%22%3A%200%2C%22%24_sessionTime%22%3A%201495589775%2C%22%24dp%22%3A%200%2C%22%24_sessionPVTime%22%3A%201495589775%7D; UM_distinctid=15c380670baafa-02ec3ac409c1c2-323f5c0f-1fa400-15c380670bb6e
+Host:secure.damai.cn
+Origin:https://secure.damai.cn
+Referer:https://secure.damai.cn/login.aspx?ru=https://www.damai.cn/hz/
+Upgrade-Insecure-Requests:1
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36
+Query String Parameters
+view source
+view URL encoded
+ru:https://www.damai.cn/hz/
+
+Form Data
+view source
+view URL encoded
+token:1495589525819
+nationPerfix:86
+login_email:15168475428
+login_pwd:y10203040000
+csessionid:0152JIZgtMjy7iQLwB8JakWUrR15qde5noengsSmcBOrtQ40XDvpDSgDdaq8UNBRINjtxjMgC5e_br2OSKAi3VbzNuQ-EKU57QSPM_OOozVCW5IPWORgp0LUuiNyQrRvqz7AfqROteTcLAWEj6BrFnuQ
+sig:05a1C7nT4bR5hcbZlAujcdyYahTnuRpmkILeTW_6dRiGMWRYP7L7gejsiSkg2ir0i8CTcHwEQRppPvdfHKPexaUloBJcB1aJtTlJnaYuR7OGViGp4-RSlo2wwzH2kqN58cf6_lB-i0pSQnf1woE_jHN73DeQyiOej2z69llxq1VC48WUZCPOjHiGpHcM3fmYYaOswSDfFQHfJ6eSzEVv3a0ncNx9G7bX3AR7z4rVorF5QHRtKeukwhF9vSj5Rvu7ZmXRJEkzt8Uyb4QY_szvEk2eZt9mO8SiF5SE_yW-ZZj4DSfW5cWG_YN1i4BQ8rOLFPPRkVLWbPjPgc_kP0-Qd1BNbTkQlS8gTm_BUAqFDtuTbE33OGeE4PkAIo-0k8ZQXEcZ1P-rbjF60YRJ7Iers_Sg
+alitoken:FFFF000000000168D5DA:1495589571259:0.8098064530399056
+scene:login
+
+表单登录提交时的源码
+token=1495589525819&nationPerfix=86&login_email=15168475428&login_pwd=y10203040000&csessionid=0152JIZgtMjy7iQLwB8JakWUrR15qde5noengsSmcBOrtQ40XDvpDSgDdaq8UNBRINjtxjMgC5e_br2OSKAi3VbzNuQ-EKU57QSPM_OOozVCW5IPWORgp0LUuiNyQrRvqz7AfqROteTcLAWEj6BrFnuQ&sig=05a1C7nT4bR5hcbZlAujcdyYahTnuRpmkILeTW_6dRiGMWRYP7L7gejsiSkg2ir0i8CTcHwEQRppPvdfHKPexaUloBJcB1aJtTlJnaYuR7OGViGp4-RSlo2wwzH2kqN58cf6_lB-i0pSQnf1woE_jHN73DeQyiOej2z69llxq1VC48WUZCPOjHiGpHcM3fmYYaOswSDfFQHfJ6eSzEVv3a0ncNx9G7bX3AR7z4rVorF5QHRtKeukwhF9vSj5Rvu7ZmXRJEkzt8Uyb4QY_szvEk2eZt9mO8SiF5SE_yW-ZZj4DSfW5cWG_YN1i4BQ8rOLFPPRkVLWbPjPgc_kP0-Qd1BNbTkQlS8gTm_BUAqFDtuTbE33OGeE4PkAIo-0k8ZQXEcZ1P-rbjF60YRJ7Iers_Sg&alitoken=FFFF000000000168D5DA%3A1495589571259%3A0.8098064530399056&scene=login
+
+

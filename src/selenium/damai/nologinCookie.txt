@@ -1,0 +1,41 @@
+General
+Request URL:https://secure.damai.cn/login.aspx?ru=https://www.damai.cn/hz/
+Request Method:GET
+Status Code:200 OK
+Remote Address:116.211.167.23:443
+Referrer Policy:no-referrer-when-downgrade
+
+Response Headers
+view source
+Cache-Control:no-store
+Connection:keep-alive
+Content-Encoding:gzip
+Content-Type:text/html; charset=utf-8
+Date:Wed, 24 May 2017 01:14:22 GMT
+Pragma:no-cache
+Server:Tengine
+Set-Cookie:x_hm_tuid=bijF0vrkHYEFP4QUPn8V6q4XhfdRPlRROspKtY/7jMKkjzvHUG9bj4vKxgyidifd; domain=.damai.cn; path=/
+Set-Cookie:aliyungf_tc=AQAAAK/BvzqagwsAo+PheiyZ7h+3bVH3; Path=/; HttpOnly
+Set-Cookie:page_tran_time=15.6255; path=/
+Set-Cookie:Damai_SessionId=5f23396c-a7f6-4fa5-9b2a-5657d502da40; path=/
+Transfer-Encoding:chunked
+Vary:Accept-Encoding
+X-AspNet-Version:4.0.30319
+X-Powered-By:ASP.NET
+
+Request Headers
+view source
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding:gzip, deflate, sdch, br
+Accept-Language:zh-CN,zh;q=0.8
+Cache-Control:max-age=0
+Connection:keep-alive
+Host:secure.damai.cn
+Referer:https://www.damai.cn/hz/
+Upgrade-Insecure-Requests:1
+User-Agent:Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36
+
+Query String Parameters
+view source
+view URL encoded
+ru:https://www.damai.cn/hz/
