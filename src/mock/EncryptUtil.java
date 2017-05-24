@@ -1,3 +1,4 @@
+package mock;
 /*
  * Project Name: zc-collect-common
  * File Name: EncryptUtil.java
