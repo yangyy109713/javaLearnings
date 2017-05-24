@@ -12,7 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class SeleniumDamai {
 	public static void main(String args[]) throws InterruptedException{
-		System.setProperty("webdriver.chrome.driver", "lib\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "lib\\chromedriver_new.exe");
 		WebDriver driver = new ChromeDriver();
 		List <WebElement> eleList;
 		driver.get("https://www.damai.cn/hz/");//open Damai's URL in chromeBrowser
@@ -40,14 +40,14 @@ public class SeleniumDamai {
 		driver.findElement(By.id("subbtn")).click();//click login button
 		Thread.sleep(1000);
 		
-		//driver.findElement(By.id("chengshi_hz_fldh_spfl_003")).click();//话剧歌剧列表
-		driver.findElement(By.linkText("音乐会")).click();//选择音乐会列表
+		//driver.findElement(By.linkText("音乐会")).click();//音乐会列表
+		driver.findElement(By.id("chengshi_hz_fldh_spfl_002")).click();//音乐会列表
 		Thread.sleep(1000);
 		list = new ArrayList<String>(driver.getWindowHandles());//将获得的当前所有打开的windows窗口转换成list
 		driver.switchTo().window(list.get(2));
 		Thread.sleep(500);
 		
-		eleList = driver.findElements(By.xpath("//a[@id='search_log_116923']"));//该id有在页面上有2个a标签，全部获取到，然后取需要的
+		eleList = driver.findElements(By.xpath("//a[@id='search_log_116923']"));//该id在页面上有2个a标签，全部获取到，然后取需要的
 		eleList.get(1).click();//点击商品名称
 		
 		Thread.sleep(1000);
@@ -63,7 +63,12 @@ public class SeleniumDamai {
 		eleList = driver.findElements(By.id("btnBuyNow"));//获取多个有相同id的元素
 		eleList.get(0).click();//点击“立即购买”
 		Thread.sleep(500);
-		driver.findElement(By.linkText("新建配送地址")).click();
+		
+		/*eleList = driver.findElements(By.className("txt-primary"));//获得“新建配送地址”所在的元素
+		//driver.findElement(By.linkText("新建配送地址")).click();
+		eleList.get(0).click();//点击“新建配送地址”
+		 */
+		driver.findElement(By.xpath("//div[@class='rbox']/a[1]")).click();//获得“新建配送地址”所在的元素
 		
 		driver.findElement(By.xpath("//div[@class='m-m-newinp'][3]")).click();//所在地区
 		driver.findElement(By.xpath("//ul[@class='inp-hd']/li[1]")).click();//点击“省份”
