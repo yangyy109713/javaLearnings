@@ -70,21 +70,20 @@ public class CookieTest implements Serializable{
 
 		driver = new ChromeDriver(options);
 		baseUrl = "http://172.16.129.192:8080/";
-		homeUrl = "http://172.16.129.192:8080/ExerciseBookManager/web/home";
+		homeUrl = baseUrl+"ExerciseBookManager/web/home";
 		cookiePath = "cookie.data";
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 
 	@Test
 	public void saveCookieTest() throws FileNotFoundException, InterruptedException, IOException{
-		//saveCookie("yangyy","123456","cookies.ser");//路径默认保存到工程的根目录下，如seleniumTest/cookies.ser
 		//saveCookieNew("yangyy","123456","cookie.data");
 		getCookieLogin(homeUrl,cookiePath);
 	}
 	
-	@SuppressWarnings("deprecation")
 	public void getCookieLogin(String url,String cookiePath){
 		driver.get(url);
+		sleep(3000);
 		File file = new File(cookiePath);
 		try {
 			FileReader fr = new FileReader(file);
@@ -100,12 +99,13 @@ public class CookieTest implements Serializable{
 					String domain = st.nextToken();
 					//System.out.println("domain:"+domain);//for test
 					String path = st.nextToken();
+					
 					//System.out.println("path:"+path);//for test
 					Date expiry = null;//cookie的失效时间，默认存在浏览器打开期间
 					String expiryString = st.nextToken();
 					/*if(!(expiryString.equals(null)&& expiryString.equals("false")))
                     {
-						//expiry = new Date(expiryString);
+						expiry = (Date)st.nextElement();//编译报错java.lang.String cannot be cast to java.util.Date
 						System.out.println("expiry:"+expiryString);//for test
                     }*/
 					boolean isSecure = new Boolean(st.nextToken()).booleanValue();
@@ -116,6 +116,8 @@ public class CookieTest implements Serializable{
 					driver.manage().addCookie(ck);
 				}
 			}
+			br.close();
+			fr.close();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -148,7 +150,6 @@ public class CookieTest implements Serializable{
 		//获取cookies
 		Set<Cookie> cookies = driver.manage().getCookies();
 		System.out.println("cookie_size:"+cookies.size());
-		Iterator<Cookie> it = cookies.iterator();
 		File file = new File(cookiepath);
 		file.delete();
 		try {
