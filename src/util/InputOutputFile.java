@@ -37,7 +37,8 @@ public class InputOutputFile implements Serializable {
 	}
 	
 	/*
-	 * 使用BufferedWriter和FileWriter将内容写入文件
+	 * 使用BufferedReader和FileReader将内容从文件中读出
+	 * 以行为单位读取文件内容，一次读一整行
 	 */
 	public void outputfromFile(String filePath){
 		File file = new File(filePath);
@@ -56,4 +57,6 @@ public class InputOutputFile implements Serializable {
 			e.printStackTrace();
 		}
 	}
+	
+	DateString ds = new DateString();
 }
