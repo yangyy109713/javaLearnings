@@ -1,4 +1,4 @@
-package test;
+package util;
 
 import static org.junit.Assert.assertEquals;
 
@@ -10,6 +10,6 @@ public class CalculatorTest{
 		Calculator calculator = new Calculator();
 		int sum = calculator.evaluate("1+2+3");
 		assertEquals(6,sum);
-		System.out.println("sum="+sum);
+		System.out.println("CalculatorTest-sum="+sum);
 	}
 }
