@@ -1,7 +1,9 @@
 package util;
 
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
+import org.junit.runner.JUnitCore;
 /*
  * 	Using Suite as a runner allows you to manually build a suite containing tests from many classes.
  *  It is the JUnit 4 equivalent of the JUnit 3.8.x static Test suite() method.
