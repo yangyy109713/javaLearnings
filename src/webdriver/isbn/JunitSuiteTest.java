@@ -1,4 +1,4 @@
-package util;
+package webdriver.isbn;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
@@ -17,9 +17,7 @@ import org.junit.runners.Suite;
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
-	JunitMethodOrderTest.class,
-	CalculatorTest.class,
-	CalendarTest.class
+	
 })
 
 public class JunitSuiteTest {
