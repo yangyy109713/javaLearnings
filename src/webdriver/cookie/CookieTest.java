@@ -99,8 +99,8 @@ public class CookieTest implements Serializable{
 					String domain = st.nextToken();
 					//System.out.println("domain:"+domain);//for test
 					String path = st.nextToken();
-					
 					//System.out.println("path:"+path);//for test
+					String expiryStrign = st.nextToken();//for ignore the Date
 					Date expiry = null;//cookie的失效时间，默认存在浏览器打开期间
 					boolean isSecure = new Boolean(st.nextToken()).booleanValue();
 					//System.out.println("isSecure:"+isSecure);//for test
