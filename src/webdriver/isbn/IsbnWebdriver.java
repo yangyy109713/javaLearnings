@@ -63,9 +63,7 @@ public class IsbnWebdriver implements Serializable{
 		Thread.sleep(1000);
 		driver.findElement(By.linkText("ISBN管理")).click();
 		Thread.sleep(1000);
-		driver.findElement(
-				By.xpath("//div[@id='main-menu-inner']/ul/li/ul/li/a/span"))
-				.click();
+		driver.findElement(By.xpath("//div[@id='main-menu-inner']/ul/li/ul/li/a/span")).click();
 		Thread.sleep(1000);
 		driver.findElement(By.id("barcode")).clear();
 		driver.findElement(By.id("barcode")).sendKeys("7131091234570");
@@ -83,16 +81,11 @@ public class IsbnWebdriver implements Serializable{
 		Thread.sleep(1000);
 		driver.findElement(By.name("name")).clear();
 		driver.findElement(By.name("name")).sendKeys("樱桃之书");
-		new Select(driver.findElement(By.name("type")))
-				.selectByVisibleText("暑期作业");
-		new Select(driver.findElement(By.name("subject")))
-				.selectByVisibleText("科学");
-		new Select(driver.findElement(By.name("grade")))
-				.selectByVisibleText("三年级");
-		new Select(driver.findElement(By.name("term")))
-				.selectByVisibleText("上册");
-		new Select(driver.findElement(By.name("edition")))
-				.selectByVisibleText("苏教版");
+		new Select(driver.findElement(By.name("type"))).selectByVisibleText("暑期作业");
+		new Select(driver.findElement(By.name("subject"))).selectByVisibleText("科学");
+		new Select(driver.findElement(By.name("grade"))).selectByVisibleText("三年级");
+		new Select(driver.findElement(By.name("term"))).selectByVisibleText("上册");
+		new Select(driver.findElement(By.name("edition"))).selectByVisibleText("苏教版");
 		driver.findElement(By.name("press")).clear();
 		driver.findElement(By.name("press")).sendKeys("出版社1");
 		driver.findElement(By.name("year")).clear();
@@ -110,16 +103,13 @@ public class IsbnWebdriver implements Serializable{
 		driver.findElement(By.id("save-info-67669")).click();
 		assertEquals("你确定需要保存数据？", closeAlertAndGetItsText());
 		driver.findElement(By.id("cover-file-input-0")).clear();
-		driver.findElement(By.id("cover-file-input-0")).sendKeys(
-				"F:\\FastStone\\00.jpg");
-		new Select(driver.findElement(By.name("hasAnswer")))
-				.selectByVisibleText("否");
+		driver.findElement(By.id("cover-file-input-0")).sendKeys("F:\\FastStone\\00.jpg");
+		new Select(driver.findElement(By.name("hasAnswer"))).selectByVisibleText("否");
 		driver.findElement(By.id("save-info-67669")).click();
 		assertEquals("你确定需要保存数据？", closeAlertAndGetItsText());
 		driver.findElement(By.id("search-btn")).click();
 		driver.findElement(By.linkText("处理")).click();
-		new Select(driver.findElement(By.id("workflowOp")))
-				.selectByVisibleText("已购买");
+		new Select(driver.findElement(By.id("workflowOp"))).selectByVisibleText("已购买");
 		driver.findElement(By.cssSelector("option[value=\"100200100000\"]"))
 				.click();
 		new Select(driver.findElement(By.id("nextUserId")))
@@ -128,8 +118,7 @@ public class IsbnWebdriver implements Serializable{
 				.selectByVisibleText("购买含答案纸质书");
 		driver.findElement(By.xpath("(//button[@type='button'])[15]")).click();
 		assertEquals("您确定需要提交该处理？", closeAlertAndGetItsText());
-		driver.findElement(By.cssSelector("span.glyphicon.glyphicon-cog"))
-				.click();
+		driver.findElement(By.cssSelector("span.glyphicon.glyphicon-cog")).click();
 		new Select(driver.findElement(By.id("workflowOp")))
 				.selectByVisibleText("已到货");
 		new Select(driver.findElement(By.id("nextUserId")))
