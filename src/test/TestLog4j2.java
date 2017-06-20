@@ -13,11 +13,11 @@ import java.io.IOException;
 
 public class TestLog4j2 {
 	/*
-	 * ģ���ļ��������10M��ʱ�䳬��1������֤logger���
+	 * 模拟文件体积超过10M和时间超过1分钟验证logger结果
 	 */
 	public static void main(String[] args) throws IOException{
 		/*
-		 * �Զ���log4j2.xml�����ļ�λ��
+		 * 自定义log4j2.xml配置文件位置
 		 */
 		/*File file = new File("e:/yangyy/log4j2.xml");
 		BufferedInputStream in = new BufferedInputStream(new FileInputStream(file));
