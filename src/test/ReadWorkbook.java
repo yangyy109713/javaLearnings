@@ -65,6 +65,7 @@ public class ReadWorkbook {
 				}
 			}
 			fs.close();
+			wb.close();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
