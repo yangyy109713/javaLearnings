@@ -13,7 +13,7 @@ public class SeriesCount {
             System.out.println("第" + i + "列的值是" + (double)u / d);
             sum += (double)u / d;
             int t = d;
-            d = u ;
+            d = u;
             u += t;
         }
         System.out.println(sum);
