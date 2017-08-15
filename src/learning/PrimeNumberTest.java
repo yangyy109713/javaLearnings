@@ -4,7 +4,7 @@ package learning;
  * Created by yuanyuanyang1 on 8/1/2017.
  */
 /*
-输出101-200之间有素数的总数，并输出每个素数
+输出101-200之间所有素数的总数，并输出每个素数
 素数：又叫质数，只能被1和它本身整除
  */
 public class PrimeNumberTest {
@@ -26,11 +26,11 @@ public class PrimeNumberTest {
                 }
             }
             if(isPrime){
-                sum ++;
+                sum += i;
                 System.out.println(i);
             }
         }
-        System.out.println("素数总数是：" + sum);
+        System.out.println("所有素数之和是：" + sum);
         return sum;
     }
 
