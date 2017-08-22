@@ -21,6 +21,7 @@ public class Test39 {
             }
         return sum;
     }
+
     static double sum1(int n){
         double sum = 0;
         if(n < 0){
