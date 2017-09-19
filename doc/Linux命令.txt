@@ -1,0 +1,53 @@
+9.
+
+8.使用用户名、密码登录Linux服务器,
+如果提示Could not chdir to home directory /home/yuanyuanyang1: No such file or directory
+此时输入命令：sudo su，再次输入密码即可
+
+
+7.Qa清除memcached缓存
+本地电脑打开cmd；telnet IP 11211；输入命令flush_all
+
+
+6.查看日志文件命令
+如查看tomcat日志：tail -f /usr/local/tomcat/logs/catalina.out
+catalina.out表示实时日志，也可以指定具体日志时间
+
+
+5.Linux下“/”表示根目录
+如果已经在根目录下，cd后面可以不用再加“/”
+
+
+4.查看当前目录下所有文件
+ls
+
+
+3.进入指定目录
+方法1：输入目录的路径，如cd /usr/local/tomcat
+方法2：一层一层进入，如cd /usr -> ls -> cd local - > cd tomcat
+
+
+
+2.kill命令帮助
+#kill -l
+
+
+1.杀tomcat进程
+
+打开终端，进入Tomcat bin目录下
+cd /java/tomcat
+#执行
+bin/startup.sh #启动tomcat
+bin/shutdown.sh #停止tomcat
+tail -f logs/catalina.out #看tomcat的控制台输出
+
+#看是否已经有tomcat在运行了
+ps -ef |grep tomcat 
+#如果有，用kill命令
+kill -9 pid #pid 为相应的进程号
+
+例如 pe -ef |grep tomcat 输出如下：
+sun 5144 1 0 10:21 pts/1 00:00:06 /java/jdk/bin/java -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djava.endorsed.dirs=/java/tomcat/common/endorsed -classpath :/java/tomcat/bin/bootstrap.jar:/java/tomcat/bin/commons-logging-api.jar -Dcatalina.base=/java/tomcat -Dcatalina.home=/java/tomcat -Djava.io.tmpdir=/java/tomcat/temp org.apache.catalina.startup.Bootstrap start
+
+则 5144 就为进程号 pid = 5144
+kill -9 5144 就可以彻底杀死tomcat
