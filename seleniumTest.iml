@@ -66,5 +66,6 @@
     <orderEntry type="library" name="poi-3.16" level="project" />
     <orderEntry type="library" name="log4j-core-2.8.2" level="project" />
     <orderEntry type="library" name="javax.ws.rs-api-2.0" level="project" />
+    <orderEntry type="library" name="mockito-all-1.9.5" level="application" />
   </component>
 </module>
